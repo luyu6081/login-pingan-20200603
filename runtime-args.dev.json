@@ -1,0 +1,5 @@
+{
+  "EJ_AUTH_ENDPOINT_HTTP": "http://auth-frontier.dev.jinxin.cloud/graphql",
+  "EJ_USE_LOGIN_FLAG": true,
+  "EJ_THIRD_PARTY_LOGIN_URL": "http://auth-service.dev.jinxin.cloud"
+}

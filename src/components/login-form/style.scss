@@ -1,0 +1,80 @@
+$blue: #477de9; // theme('colors.blue.default')
+
+.login-form {
+  @apply flex flex-col text-white;
+
+  width: 452px;
+  height: 406px;
+  padding: 45px 73px 23px 73px;
+  box-shadow: 0 2px 26px 6px transparentize(#000, .85);
+
+  .login-form-title {
+    @apply text-center;
+
+    font-size: 1.4285714285714286rem;
+    margin-bottom: 35px;
+  }
+
+  .login-label {
+    @apply flex items-center cursor-pointer;
+
+    .login-checkbox-label{
+      display: inline;
+    }
+    
+    .login-checkbox {
+      visibility: hidden;
+      width: 0;
+    }
+    
+    .login-checkbox + .login-checkbox-label {
+      @apply cursor-pointer appearance-none;
+
+      border: 1px solid transparentize(#FFF, .5);
+      border-radius: 2px;
+      width: 14px;
+      height: 14px;
+      outline: none;
+    }
+    
+    .login-checkbox:checked + .login-checkbox-label {
+      @apply bg-blue border-blue relative;
+    }
+    
+    .login-checkbox:checked + .login-checkbox-label:after {
+      @apply absolute bg-transparent border-l border-b border-white;
+
+      content: '';
+      top: 2.5px;
+      left: 2px;
+      height: 4px;
+      width: 8px;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .login-span-text {
+    @apply text-base;
+
+    padding-left: 10px;
+    line-height: 19px;
+    
+    &.active {
+      color: $blue;
+    }
+  }
+
+  .login-button {
+    @apply bg-blue text-white leading-none;
+
+    margin-top: 35px;
+    height: 42px;
+    border-radius: 21px;
+
+    &[disabled] {
+      @apply cursor-default;
+
+      background: transparentize($blue, 0.4);
+    }
+  }
+}

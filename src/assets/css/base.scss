@@ -1,0 +1,42 @@
+@tailwind base;
+
+html, body {
+  @apply h-screen font-sans antialiased;
+
+  font-size: 14px;
+}
+
+svg {
+  @apply fill-current;
+}
+
+em, i {
+  @apply not-italic;
+}
+
+@tailwind utilities;
+
+/*a input标签初始化*/
+a:focus, input:focus, button:focus {
+  outline: none;
+}
+
+input::-webkit-input-placeholder {
+  color: hsla(0, 0%, 100%, .5);
+}
+
+input::-moz-input-placeholder {
+  color: hsla(0, 0%, 100%, .5);
+}
+
+input::-ms-input-placeholder {
+  color: hsla(0, 0%, 100%, .5);
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.pt20 {
+  padding-top: 20px;
+}

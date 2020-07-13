@@ -1,0 +1,4 @@
+[submodule "ej-ui"]
+	path = externals/ej-ui
+	url = ../../infra_front/ej-ui.git
+	branch = dev

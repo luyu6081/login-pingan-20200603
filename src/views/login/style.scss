@@ -1,0 +1,30 @@
+.login-page {
+  background: theme('colors.blue.default') url('../../assets/imgs/login-bg.png') no-repeat;
+  background-size: cover;
+  min-width: 1180px;
+  min-height: 650px;
+}
+
+.login-container {
+  width: 912px;
+  height: 465px;
+
+  .login-main {
+    background: rgba(13, 40, 66, .38);
+  }
+
+  .login-img {
+    width: 460px;
+    height: 406px;
+    max-width: 100%;
+    background: url('../../assets/imgs/login-left.png') no-repeat;
+    background-size: cover;
+  }
+
+  .login-title {
+    @apply text-white text-center;
+
+    font-size: 32px;
+    letter-spacing: 1px;
+  }
+}
